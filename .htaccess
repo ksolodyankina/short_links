@@ -1,0 +1,10 @@
+# HTID:2652034: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:2652034:
+DirectoryIndex index.php
+
+RewriteEngine on
+Options +FollowSymlinks
+RewriteBase /
+
+RewriteRule ^([0-9a-zA-Z]+)$ /redir.php?link=$1
